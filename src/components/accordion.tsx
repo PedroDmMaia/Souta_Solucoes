@@ -10,18 +10,18 @@ export function Accordion({ answer, question }: AccordionProps) {
   const [faqIsOpen, setFaqIsOpen] = useState(false)
 
   return (
-    <div className="py-2 border-b-[1px] border-gray-300">
+    <div className="py-2 border-b-[1px] border-black">
       <button
         onClick={() => setFaqIsOpen(!faqIsOpen)}
         className="flex items-center justify-between w-full"
       >
-        <span className={`font-semibold ${faqIsOpen ? 'text-indigo-500' : ''}`}>
+        <span className={`font-semibold ${faqIsOpen ? 'text-corTexto' : ''}`}>
           {question}
         </span>
         {faqIsOpen ? (
-          <Minus className={faqIsOpen ? 'text-indigo-500' : ''} />
+          <Minus className={faqIsOpen ? 'text-corTexto' : ''} />
         ) : (
-          <Plus className={faqIsOpen ? 'text-indigo-500' : ''} />
+          <Plus className={faqIsOpen ? 'text-corTexto' : ''} />
         )}
       </button>
       <div

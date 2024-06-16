@@ -2,46 +2,42 @@ import { ChartBar, Speedometer, TrendUp } from '@phosphor-icons/react'
 
 export function Topics() {
   return (
-    <div className="bg-slate-100 md:ml-48 shadow-lg rounded-l-lg shadow-slate-200 md:pl-8 md:pr-52 md:mb-44">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-28 py-12 md:py-20 md:mx-[7rem]">
-        <div className="flex flex-col md:items-start items-center gap-4 md:text-start text-center">
-          <div className="rounded-full bg-white flex items-center justify-center text-indigo-500 p-2">
+    <div className="bg-cor-fundo xl:ml-48 lg:ml-14 shadow-lg rounded-l-xl shadow-slate-900 xl:pl-8 xl:pr-52 xl:mb-20 z-20 relative">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-20 md:gap-28 py-12 md:py-20 md:mx-[7rem] -mt-10">
+        <div className="flex flex-col lg:items-start items-center gap-4 md:text-start text-center">
+          <div className="rounded-full bg-corTexto flex items-center justify-center text-white p-2">
             <Speedometer size={32} />
           </div>
-          <h3 className="font-semibold text-indigo-500 md:text-xl">
-            Seu nome limpo
-            <br /> em até 48h
-          </h3>
+          <h3 className="font-semibold text-cyan-800 md:text-xl">CONFIANÇA</h3>
           <p className="text-md md:w-full w-[20rem]">
-            Após o pagamento da 1ª parcela do acordo, você pode ter a sua vida
-            descomplicada pelo menor tempo possível.
+            Sobre ela estruturamos todas as nossas atitudes, buscando
+            fortalecê-la a cada dia através de um trabalho íntegro e de
+            qualidade.
           </p>
         </div>
 
-        <div className="flex flex-col md:items-start items-center gap-4 md:text-start text-center">
-          <div className="rounded-full bg-white flex items-center justify-center text-indigo-500 p-2">
+        <div className="flex flex-col lg:items-start items-center gap-4 md:text-start text-center">
+          <div className="rounded-full bg-corTexto flex items-center justify-center text-white p-2">
             <ChartBar size={32} />
           </div>
-          <h3 className="font-semibold text-indigo-500 md:text-xl ">
-            Análise de revisão
-            <br /> contratual
+          <h3 className="font-semibold text-cyan-800 md:text-xl ">
+            CREDIBILIDADE
           </h3>
           <p className="text-md md:w-full w-[20rem]">
-            Contratos de dívidas devem ser analisados com cautela. Evitando
-            juros abusivos.
+            Uma qualidade que se conquista com um trabalho de excelência
+            oferecido de maneira uniforme a todos os nossos clientes.
           </p>
         </div>
 
-        <div className="flex flex-col md:items-start items-center gap-4 md:text-start text-center">
-          <div className="rounded-full bg-white flex items-center justify-center text-indigo-500 p-2">
+        <div className="flex flex-col lg:items-start items-center gap-4 lg:text-start text-center">
+          <div className="rounded-full bg-corTexto flex items-center justify-center text-white p-2">
             <TrendUp size={32} />
           </div>
-          <h3 className="font-semibold text-indigo-500 md:text-xl ">
-            Aumento da sua
-            <br /> linha de crédito
-          </h3>
+          <h3 className="font-semibold text-cyan-800 md:text-xl ">ÉTICA</h3>
           <p className="text-md md:w-full w-[20rem]">
-            Precisa de mais dinheiro para alavancar a vida? Conte conosco.
+            Um pilar fundamental baseado em nossos valores que norteia as ações
+            de nossa equipe, definindo critérios para a manipulação de
+            informações de nossos clientes.
           </p>
         </div>
       </div>

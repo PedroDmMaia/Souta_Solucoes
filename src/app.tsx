@@ -6,6 +6,7 @@ import { Footer } from './sections/footer'
 import { ContactForm } from './sections/form'
 import { Hero } from './sections/hero'
 import { Home } from './sections/home'
+import { HowWork } from './sections/services'
 import { Topics } from './sections/topics'
 
 export function App() {
@@ -13,14 +14,15 @@ export function App() {
     <>
       <Toaster richColors />
       <NavBar />
-      <main className="bg-white w-full h-full pt-[4.5rem]">
+      <main className="bg-slate-700 w-full h-full pt-[4.5rem]">
         <Hero />
         <Topics />
         <Home />
+        <HowWork />
         <Faq />
         <ContactForm />
+        <Footer />
       </main>
-      <Footer />
     </>
   )
 }

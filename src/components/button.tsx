@@ -5,8 +5,8 @@ type ButtonProps = {
 }
 export function Button({ children }: ButtonProps) {
   return (
-    <button className="bg-indigo-600 text-white py-2 px-6 rounded md:ml-8 hover:bg-indigo-400 duration-200">
-      {children}
+    <button className="md:ml-8 py-2 px-3 w-36 bg-transparent border-2 border-corTexto text-corTexto hover:bg-corTexto hover:border-transparent hover:text-white rounded-md font-semibold ease-in-out duration-300">
+      <a href="">{children}</a>
     </button>
   )
 }

@@ -1,24 +1,23 @@
-import HeroImg from '../../public/hero-pic-1024x1019.webp'
-
 export function Hero() {
   return (
-    <div className="md:grid grid-cols-2 pt-10 md:px-10 xl:px-[21rem] px-7">
-      <div className="h-full flex justify-center flex-col items-center xl:items-start">
+    <div className="relative md:grid grid-cols-2 py-32 md:px-10 xl:px-[21rem] px-7 bg-hero-image bg-cover">
+      <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
+
+      <div className="h-full flex justify-center flex-col items-center xl:items-start  z-10">
         <div className="xl:pr-14 flex flex-col xl:gap-7 gap-5">
-          <h1 className="font-bold xl:text-5xl text-3xl text-center xl:text-start">
-            Soluções <span className="text-indigo-500">financeiras</span> sem
+          <h1 className="uppercase font-bold xl:text-4xl text-3xl text-center xl:text-start text-white">
+            Soluções <span className="text-corTexto">financeiras</span> sem
             complicação
           </h1>
-          <p className="xl:w-[25rem] xl:mb-8 mb-5 text-center xl:text-start">
+          <p className="xl:w-[25rem] xl:mb-8 mb-5 text-center xl:text-start text-white">
             Aliamos nossa paixão pelo crédito aos brasileiros com a clareza e a
             seriedade que um serviço essencial aos sonhos requer.
           </p>
         </div>
-        <button className="bg-indigo-500 w-80 text-white rounded-md py-3 font-semibold">
-          Fale com um de nossos atendentes
+        <button className="bg-transparent border-2 border-corTexto w-80 text-white hover:bg-cor-fundo hover:border-transparent hover:text-corTexto rounded-md py-3 font-semibold ease-in-out duration-300">
+          <a href="">Fale com um de nossos atendentes</a>
         </button>
       </div>
-      <img src={HeroImg} alt="" />
     </div>
   )
 }
