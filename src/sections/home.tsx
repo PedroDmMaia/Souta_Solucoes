@@ -2,7 +2,7 @@ import image from '../../public/imagem-3a-dobra-2.webp'
 
 export function Home() {
   return (
-    <div className="mt-20 md:mt-20 md:px-10 xl:px-[21rem] px-7 grid lg:grid-cols-2 md:mb-20 items-center gap-4 lg:gap-10">
+    <div className="mt-20 md:mt-20 md:px-10 xl:px-[21rem] px-7 grid lg:grid-cols-2 mb-12 md:mb-20 items-center gap-4 lg:gap-10">
       <img className="rounded-md" src={image} alt="" />
       <div className="xl:py-20 flex flex-col gap-5 items-start pt-5 md:pt-0 pr-0 lg:pr-24">
         <h3 className="text-3xl md:text-4xl font-bold leading-none text-white">

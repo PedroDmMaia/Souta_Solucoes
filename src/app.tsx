@@ -6,7 +6,8 @@ import { Footer } from './sections/footer'
 import { ContactForm } from './sections/form'
 import { Hero } from './sections/hero'
 import { Home } from './sections/home'
-import { HowWork } from './sections/services'
+import { HowWork } from './sections/howWorking'
+import { Services } from './sections/services'
 import { Topics } from './sections/topics'
 
 export function App() {
@@ -18,6 +19,7 @@ export function App() {
         <Hero />
         <Topics />
         <Home />
+        <Services />
         <HowWork />
         <Faq />
         <ContactForm />
