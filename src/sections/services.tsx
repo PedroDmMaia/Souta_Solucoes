@@ -2,7 +2,10 @@ import { Bank, Car, HouseLine, Money } from '@phosphor-icons/react'
 
 export function Services() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 justify-between md:px-10 xl:px-[21rem] px-7">
+    <div
+      id="services"
+      className="grid grid-cols-1 lg:grid-cols-2 gap-10 justify-between md:px-10 xl:px-[21rem] px-7 pt-24 md:pt-28"
+    >
       <div>
         <span className="text-sm uppercase text-zinc-400">Nossos serviços</span>
         <h3 className="text-2xl uppercase text-white mb-2 font-bold">

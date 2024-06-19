@@ -1,17 +1,33 @@
 import { List, X } from '@phosphor-icons/react'
-import { useState } from 'react'
+import { MouseEvent as ReactMouseEvent, useState } from 'react'
 
 import Logo from '../../public/Cópia de Cabeçalho.jpg'
 import { Button } from './button'
+
+interface Link {
+  name: string
+  link: string
+}
 export function NavBar() {
-  const Links = [
-    { name: 'Início', link: '/' },
-    { name: 'Serviços', link: '/' },
-    { name: 'Como funciona', link: '/' },
-    { name: 'Dúvidas', link: '/' },
+  const Links: Link[] = [
+    { name: 'Início', link: 'home' },
+    { name: 'Serviços', link: 'services' },
+    { name: 'Como funciona', link: 'howWorking' },
+    { name: 'Dúvidas', link: 'faq' },
   ]
 
   const [isOpen, setIsOpen] = useState(false)
+
+  const handleClick = (
+    event: ReactMouseEvent<HTMLAnchorElement>,
+    link: string,
+  ) => {
+    event.preventDefault()
+    const section = document.getElementById(link)
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   return (
     <div className="shadow-md w-full fixed top-0 left-0 z-50">
@@ -29,14 +45,15 @@ export function NavBar() {
           {Links.map((link, index) => (
             <li key={index} className="lg:ml-8 text-xl lg:my-0 my-7">
               <a
-                href={link.name}
+                href={`#${link.link}`}
                 className="text-corTexto hover:text-white cursor-pointer duration-150"
+                onClick={(event) => handleClick(event, link.link)}
               >
                 {link.name}
               </a>
             </li>
           ))}
-          <Button>Fale conosco</Button>
+          <Button link="form">Fale conosco</Button>
         </ul>
       </div>
     </div>

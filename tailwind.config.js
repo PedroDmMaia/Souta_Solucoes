@@ -11,6 +11,9 @@ export default {
         'hero-image': "url('/public/hero.jpg')",
         paralax: "url('/public/paralax.jpg')",
       },
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+      },
     },
   },
   plugins: [],
