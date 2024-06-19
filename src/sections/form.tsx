@@ -47,7 +47,10 @@ export function ContactForm() {
   }
 
   return (
-    <div id="form" className="max-w-md mx-auto p-4 pt-0 relative py-20">
+    <div
+      id="form"
+      className="max-w-md mx-auto p-4 relative pb-20 pt-24 md:pt-20"
+    >
       <h3 className="text-center py-5 text-4xl uppercase font-bold">
         Entre em contato <span className="text-zinc-400">conosco</span>
       </h3>

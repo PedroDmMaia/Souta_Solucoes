@@ -1,4 +1,4 @@
-import imageFooter from '../../public/Cópia de Cabeçalho.jpg'
+import imageFooter from '../../public/Logo.png'
 
 export function Footer() {
   return (

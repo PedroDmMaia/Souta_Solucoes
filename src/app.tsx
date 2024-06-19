@@ -12,7 +12,7 @@ import { Topics } from './sections/topics'
 
 export function App() {
   return (
-    <div className="font-roboto">
+    <div className="font-roboto antialiased">
       <Toaster richColors />
       <NavBar />
       <main className="bg-slate-700 w-full h-full pt-[4.5rem]">

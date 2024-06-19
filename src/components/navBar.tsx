@@ -1,7 +1,7 @@
 import { List, X } from '@phosphor-icons/react'
 import { MouseEvent as ReactMouseEvent, useState } from 'react'
 
-import Logo from '../../public/Cópia de Cabeçalho.jpg'
+import Logo from '../../public/Logo.png'
 import { Button } from './button'
 
 interface Link {
