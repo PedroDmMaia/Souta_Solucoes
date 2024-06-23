@@ -17,71 +17,77 @@ export function HowWork() {
           <h2 className="text-3xl uppercase">Como Funciona</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4 mt-20">
-            <div className="flex flex-col items-center justify-center text-center gap-2 bg-cor-fundo text-corTexto rounded-md p-8 h-80 md:h-auto">
+            <div className="flex flex-col items-center text-center gap-2 bg-cor-fundo text-corTexto rounded-md p-8 h-80 md:h-auto">
               <div>
                 <Handshake size={32} />
               </div>
               <span className="font-bold uppercase text-xl">
-                Equipe especializada
+                Equipe <span className="block">especializada</span>
               </span>
-              <p>
-                Feita a contratação de nossos serviços, iremos efetuar um
-                levantamento completo e detalhado sobre todas as dividas em seu
-                CPF
+              <p className="">
+                Quando você contrata a Souta Soluções, nossa equipe de
+                especialistas em crédito faz um levantamento completo e
+                detalhado de todas as dívidas associadas ao seu CPF.
               </p>
             </div>
 
-            <div className="flex flex-col items-center justify-center text-center  gap-2 bg-cor-fundo text-corTexto rounded-md p-8 h-80 md:h-auto">
+            <div className="flex flex-col items-center text-center  gap-2 bg-cor-fundo text-corTexto rounded-md p-8 h-80 md:h-auto">
               <div>
                 <PhoneOutgoing size={32} />
               </div>
               <span className="font-bold uppercase text-xl">
-                Contato com nossa equipe
+                Suporte <span className="block">completo</span>
               </span>
               <p>
-                Com o Dossiê de suas dividas em mãos Nossos especialistas entram
-                em contato analisando as melhores possibilidades de negociações
-                que caibam em seu bolso.
+                Com um dossiê completo de suas dívidas em mãos, nossos
+                especialistas entrarão em contato para discutir as melhores
+                opções de negociação. O objetivo é encontrar soluções de
+                pagamento que sejam acessíveis e adequadas à sua vida
+                financeira.
               </p>
             </div>
 
-            <div className="flex flex-col items-center justify-center text-center  gap-2 bg-cor-fundo text-corTexto rounded-md p-8 h-80 md:h-auto">
+            <div className="flex flex-col items-center text-center  gap-2 bg-cor-fundo text-corTexto rounded-md p-8 h-80 md:h-auto">
               <div>
                 <CurrencyDollar size={32} />
               </div>
               <span className="font-bold uppercase text-xl">
-                Possibilade de pagamento
+                Opções de <span className="block">Pagamento</span>
               </span>
               <p>
-                Com as condições alinhadas, te apresentaremos a melhor
-                possibilidade de pagamento, buscando o parcelamento de 2 até 36x
+                Após analisar suas opções, apresentamos um plano de pagamento
+                personalizado que pode ser parcelado em até 36 vezes. Nosso foco
+                é garantir que as condições sejam justas e compatíveis com seu
+                bolso.
               </p>
             </div>
 
-            <div className="flex flex-col items-center justify-center text-center gap-2 bg-cor-fundo text-corTexto rounded-md p-8 h-80 md:h-auto">
+            <div className="flex flex-col items-center text-center gap-2 bg-cor-fundo text-corTexto rounded-md p-8 h-80 md:h-auto">
               <div>
                 <Smiley size={32} />
               </div>
               <span className="font-bold uppercase text-xl">
-                Limpeza no nome
+                Limpeza do <span className="block">Nome</span>
               </span>
               <p>
-                Pagando a primeira parcela da sua Divida, seu nome sairá de
-                restrição dos órgãos de Proteção de Crédito (SPC/SERARA) em até
-                48 horas
+                Feito o pagamento da primeira parcela, iniciamos o processo para
+                remover as restrições do seu nome nos órgãos de proteção ao
+                crédito (SPC/SERASA). Em até 48 horas, seu nome estará limpo.
               </p>
             </div>
 
-            <div className="flex flex-col items-center justify-center text-center gap-2 bg-cor-fundo text-corTexto rounded-md p-8 h-80 md:h-auto">
+            <div className="flex flex-col items-center text-center gap-2 bg-cor-fundo text-corTexto rounded-md p-8 h-80 md:h-auto">
               <div>
                 <UsersThree size={32} />
               </div>
               <span className="font-bold uppercase text-xl">
-                Auxilio da equipe
+                Auxilio da <span className="block">Equipe</span>
               </span>
               <p>
-                Após seu nome limpo, nossos peritos irão te auxiliar sobre o
-                aumento de seu SCORE
+                Após a limpeza do seu nome, nossos especialistas continuam a
+                oferecer suporte. Vamos orientá-lo sobre como aumentar seu score
+                de crédito, permitindo que você reconstrua sua vida financeira e
+                tenha acesso a novas oportunidades de crédito.
               </p>
             </div>
           </div>

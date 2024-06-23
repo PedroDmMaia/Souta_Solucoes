@@ -13,10 +13,10 @@ export function Services() {
         </h3>
         <div className="w-40 bg-cor-fundo h-1 rounded-xl"></div>
         <p className="text-zinc-400 mt-5">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi unde
-          maiores beatae possimus blanditiis quasi. Debitis reprehenderit,
-          eligendi ex facilis temporibus odio repellat deleniti vel culpa, ad
-          itaque dicta minus!
+          Na Souta Soluções, oferecemos um ecossistema completo de serviços para
+          ajudar você a recuperar seu crédito, limpar seu nome, resolver
+          pendências financeiras e voltar a ter tranquilidade. Veja como podemos
+          ajudar:
         </p>
       </div>
       <div className="grid md:grid-cols-2 gap-6">
