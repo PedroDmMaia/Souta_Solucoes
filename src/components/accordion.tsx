@@ -13,15 +13,17 @@ export function Accordion({ answer, question }: AccordionProps) {
     <div className="py-2 border-b-[1px] border-black">
       <button
         onClick={() => setFaqIsOpen(!faqIsOpen)}
-        className="flex items-center justify-between w-full"
+        className="flex items-center justify-between w-full text-start"
       >
-        <span className={`font-semibold ${faqIsOpen ? 'text-corTexto' : ''}`}>
+        <span
+          className={`font-semibold ${faqIsOpen ? 'text-corTexto' : ''} w-96`}
+        >
           {question}
         </span>
         {faqIsOpen ? (
-          <Minus className={faqIsOpen ? 'text-corTexto' : ''} />
+          <Minus className={`${faqIsOpen ? 'text-corTexto' : ''}`} />
         ) : (
-          <Plus className={faqIsOpen ? 'text-corTexto' : ''} />
+          <Plus className={`${faqIsOpen ? 'text-corTexto' : ''}`} />
         )}
       </button>
       <div
