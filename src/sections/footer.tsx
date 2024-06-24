@@ -15,7 +15,7 @@ export function Footer() {
           </div>
 
           <div className="flex flex-col gap-1">
-            <p className="w-72">
+            <p className="md:w-72">
               Brasil: Av. Brigadeiro Faria Lime, 2277, 6º andar. São Paulo - SP.
             </p>
             <p>CEP 01452-000</p>
@@ -25,7 +25,7 @@ export function Footer() {
         <div className="flex flex-col gap-4">
           <span className="text-xl font-semibold uppercase">Acompanhe</span>
 
-          <div className="flex gap-3">
+          <div className="flex gap-3 justify-center md:justify-normal">
             <a href="" target="_blank">
               <InstagramLogo size={32} />
             </a>
@@ -34,7 +34,7 @@ export function Footer() {
             </a>
           </div>
 
-          <span className="uppercase font-semibold">
+          <span className="uppercase font-semibold flex flex-col items-center md:block">
             Apresentação institucional
             <a href="" target="_blank">
               <Download size={32} weight="fill" />
