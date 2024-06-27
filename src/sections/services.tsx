@@ -4,7 +4,7 @@ export function Services() {
   return (
     <div
       id="services"
-      className="grid grid-cols-1 lg:grid-cols-2 gap-10 justify-between md:px-10 xl:px-[21rem] px-7 pt-24 md:pt-28"
+      className="grid grid-cols-1 lg:grid-cols-2 gap-10 justify-between md:px-0 px-7 pt-24 md:pt-28 lg:max-w-[1118px] mx-auto"
     >
       <div>
         <span className="text-sm uppercase text-zinc-400">Nossos serviços</span>

@@ -1,10 +1,10 @@
-import image from '../../public/imagem-3a-dobra-2.webp'
+import image from '../../public/unnamed.png'
 
 export function Home() {
   return (
     <div
       id="home"
-      className="pt-24 md:pt-20 md:px-10 xl:px-[21rem] px-7 grid lg:grid-cols-2 items-center gap-4 lg:gap-10"
+      className="pt-24 md:pt-20 md:px-0 px-7 grid lg:grid-cols-2 items-center gap-4 lg:gap-10 lg:max-w-[1118px] mx-auto"
     >
       <img className="rounded-md" src={image} alt="" />
       <div className="xl:py-20 flex flex-col gap-5 items-start pt-5 md:pt-0 pr-0 lg:pr-24">

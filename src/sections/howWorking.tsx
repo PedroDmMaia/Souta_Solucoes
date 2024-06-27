@@ -13,7 +13,7 @@ export function HowWork() {
       <div className="bg-paralax bg-cover bg-fixed relative bg-center mt-20">
         <div className="absolute inset-0 bg-slate-700 opacity-80 z-0"></div>
 
-        <div className="text-white md:px-10 px-10 xl:px-[21rem] relative z-10 mb-20 py-10">
+        <div className="text-white md:px-0 px-10 relative z-10 mb-20 py-10 lg:max-w-[1200px] mx-auto">
           <h2 className="text-3xl uppercase">Como Funciona</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4 mt-20">

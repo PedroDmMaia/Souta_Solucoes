@@ -1,9 +1,9 @@
 export function Hero() {
   return (
-    <div className="relative md:grid grid-cols-2 py-32 md:px-10 xl:px-[21rem] px-7 bg-hero-image bg-cover">
+    <div className="relative md:grid grid-cols-2 py-32 px-7 bg-hero-image bg-cover">
       <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
 
-      <div className="h-full flex justify-center flex-col items-center xl:items-start relative z-10">
+      <div className="h-full flex justify-center flex-col items-center xl:items-start relative z-10 lg:max-w-[1118px] mx-auto">
         <div className="xl:pr-14 flex flex-col xl:gap-7 gap-5">
           <h1 className="uppercase font-bold xl:text-4xl text-3xl text-center xl:text-start text-white">
             transformando sua vida

@@ -6,7 +6,10 @@ import { z } from 'zod'
 
 const SendMessage = z.object({
   name: z.string().min(1, 'Informe seu nome'),
-  email: z.string().email('Informe um endereço de email existente'),
+  phone: z
+    .string()
+    .min(10, 'Informe um numero de telefone válido')
+    .max(15, 'Informe um número de telefone válido'),
   message: z.string().min(1, 'escreva uma mensagem'),
 })
 
@@ -24,16 +27,14 @@ export function ContactForm() {
 
   const handleSubmitForm = async (data: messageInfo) => {
     try {
-      // Fazendo a requisição POST para a API
       const res = await axios.post(
         'https://api.staticforms.xyz/submit',
-        { ...data, accessKey: '8b11e775-a9f3-4ff9-99fd-7b19acf6b837' }, // Inclui a chave de acesso
+        { ...data, accessKey: '8b11e775-a9f3-4ff9-99fd-7b19acf6b837' },
         {
           headers: { 'Content-Type': 'application/json' },
         },
       )
 
-      // Atualiza o estado com base na resposta da API
       if (res.data.success) {
         toast.success('Email enviado com sucesso')
       } else {
@@ -61,7 +62,7 @@ export function ContactForm() {
             htmlFor="name"
             className="block text-sm font-medium text-zinc-400"
           >
-            Name
+            Nome
           </label>
           <input
             type="text"
@@ -77,20 +78,21 @@ export function ContactForm() {
         </div>
         <div>
           <label
-            htmlFor="email"
+            htmlFor="phone"
             className="block text-sm font-medium text-zinc-400"
           >
-            Email
+            Telefone
           </label>
           <input
-            type="text"
-            id="email"
-            {...register('email')}
+            type="tel"
+            id="phone"
+            placeholder="Ex: 11 99999 9999"
+            {...register('phone')}
             className="mt-1 block w-full px-3 py-2 border border-gray-300 text-zinc-400 rounded-md shadow-sm focus:outline-none focus:ring-corTexto focus:border-corTexto sm:text-sm bg-transparent"
           />
-          {formErrors.email && (
+          {formErrors.phone && (
             <p className="mt-1 text-xs text-red-500">
-              {formErrors.email.message}
+              {formErrors.phone.message}
             </p>
           )}
         </div>
@@ -99,7 +101,7 @@ export function ContactForm() {
             htmlFor="message"
             className="block text-sm font-medium text-zinc-400"
           >
-            Message
+            Menssagem
           </label>
           <textarea
             id="message"

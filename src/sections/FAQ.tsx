@@ -8,6 +8,11 @@ export function Faq() {
         'Sim, a segurança é uma prioridade para a Souta Soluções. Nossas negociações são transparentes, sem letras miúdas ou surpresas. Você terá acesso completo a todas as informações e poderá acompanhar o status da sua negociação a qualquer momento. Para maior tranquilidade, oferecemos a opção de realizar chamadas de vídeo para que você possa conhecer nossa equipe e nossa empresa de perto, como se estivesse em um atendimento presencial.',
     },
     {
+      question: 'Como funciona o pagamento dos nossos serviços?',
+      answer:
+        'Todos os pagamentos referentes aos serviços prestados pela nossa empresa serão recebidos em nosso CNPJ - 48.435.528/0001-10, para maior segurança de nossos clientes.',
+    },
+    {
       question:
         'Quais são os custos para utilizar os serviços da Souta Soluções?',
       answer:
@@ -36,7 +41,7 @@ export function Faq() {
   return (
     <>
       <div id="faq" className="pt-16 md:pt-28"></div>
-      <div className="bg-cor-fundo md:py-20 py-12 rounded-2xl md:px-10 xl:px-[21rem] px-7 mb-10 md:grid grid-cols-2 flex flex-col-reverse mt-8 md:mt-0 mx-2 lg:mx-10">
+      <div className="bg-cor-fundo md:py-20 py-12 rounded-2xl md:px-10 px-7 mb-10 md:grid grid-cols-2 flex flex-col-reverse mt-8 md:mt-0 mx-2 lg:mx-10">
         <div className="">
           {FaqData.map((question, i) => (
             <Accordion
