@@ -1,9 +1,14 @@
-import { Download, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
+import {
+  Download,
+  FacebookLogo,
+  InstagramLogo,
+  LinkedinLogo,
+} from '@phosphor-icons/react'
 
 export function Footer() {
   return (
     <footer className="bg-cor-fundo md:px-10 px-7">
-      <div className="flex flex-col text-center gap-4 md:gap-0 md:flex-row md:text-start justify-between py-4 text-corTexto lg:max-w-[1118px] mx-auto">
+      <div className="flex flex-col text-center gap-4 md:gap-0 md:flex-row md:text-start justify-between py-4 text-corTexto xl:max-w-[1180px] mx-auto">
         <div className="flex flex-col gap-4">
           <span className="text-xl font-semibold uppercase">
             Fale com a gente
@@ -26,8 +31,15 @@ export function Footer() {
           <span className="text-xl font-semibold uppercase">Acompanhe</span>
 
           <div className="flex gap-3 justify-center md:justify-normal">
-            <a href="" target="_blank">
+            <a
+              href="https://www.instagram.com/soutasolucoes/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <InstagramLogo size={32} />
+            </a>
+            <a href="" target="_blank">
+              <FacebookLogo size={32} />
             </a>
             <a href="" target="_blank">
               <LinkedinLogo size={32} />

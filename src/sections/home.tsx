@@ -4,7 +4,7 @@ export function Home() {
   return (
     <div
       id="home"
-      className="pt-24 md:pt-20 md:px-0 px-7 grid lg:grid-cols-2 items-center gap-4 lg:gap-10 lg:max-w-[1118px] mx-auto"
+      className="pt-24 md:pt-40 md:px-10 lg:px-0 px-7 grid lg:grid-cols-2 items-center gap-4 lg:gap-10 xl:max-w-[1180px] mx-auto"
     >
       <img className="rounded-md" src={image} alt="" />
       <div className="xl:py-20 flex flex-col gap-5 items-start pt-5 md:pt-0 pr-0 lg:pr-24">
@@ -23,7 +23,7 @@ export function Home() {
           </p>
         </div>
         <button className="bg-transparent border-2 border-corTexto w-64 text-white hover:bg-cor-fundo hover:border-transparent hover:text-corTexto rounded-md py-3 font-semibold ease-in-out duration-300">
-          <a href="">Fale conosco</a>
+          <a href="#">Fale conosco</a>
         </button>
       </div>
     </div>

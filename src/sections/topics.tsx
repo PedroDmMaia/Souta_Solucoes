@@ -2,9 +2,9 @@ import { ChartBar, Speedometer, TrendUp } from '@phosphor-icons/react'
 
 export function Topics() {
   return (
-    <div className="bg-cor-fundo xl:ml-40 lg:ml-10 shadow-lg rounded-l-xl shadow-slate-900 xl:pl-8 xl:pr-52 xl:mb-10 z-20 relative">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-20 md:gap-28 py-12 md:py-20 md:mx-[7rem] -mt-10">
-        <div className="flex flex-col lg:items-start items-center gap-4 md:text-start text-center">
+    <div className="bg-cor-fundo shadow-lg shadow-slate-900 xl:pl-8 xl:mb-10 z-20 relative mt-32">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-20 md:gap-28 py-12 md:py-20 max-w-[1180px] mx-auto">
+        <div className="flex flex-col items-center gap-4 text-center">
           <div className="rounded-full bg-corTexto flex items-center justify-center text-white p-2">
             <Speedometer size={32} />
           </div>
@@ -16,7 +16,7 @@ export function Topics() {
           </p>
         </div>
 
-        <div className="flex flex-col lg:items-start items-center gap-4 md:text-start text-center">
+        <div className="flex flex-col items-center gap-4 text-center">
           <div className="rounded-full bg-corTexto flex items-center justify-center text-white p-2">
             <ChartBar size={32} />
           </div>
@@ -29,7 +29,7 @@ export function Topics() {
           </p>
         </div>
 
-        <div className="flex flex-col lg:items-start items-center gap-4 lg:text-start text-center">
+        <div className="flex flex-col items-center gap-4 text-center">
           <div className="rounded-full bg-corTexto flex items-center justify-center text-white p-2">
             <TrendUp size={32} />
           </div>
