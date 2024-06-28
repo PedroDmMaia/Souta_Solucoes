@@ -1,3 +1,4 @@
+import { WhatsappLogo } from '@phosphor-icons/react'
 import { useEffect, useState } from 'react'
 import { Toaster } from 'sonner'
 
@@ -49,6 +50,17 @@ export function MainPage() {
         <Footer />
       </main>
       <ExitPopup showPopup={showPopup} onClose={() => setShowPopup(false)} />
+      <button className="fixed bottom-5 right-5 z-50 p-[0.30rem] rounded-full bg-green-400 flex items-center justify-center">
+        <a
+          href="https://wa.me/5511970696009?text=Ol%C3%A1%2C%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20para%20negociar%20minha%20d%C3%ADvida"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span className="p-[0.30rem] absolute bg-red-500 rounded-full right-0 top-0 animate-ping"></span>
+          <span className="p-[0.30rem] absolute bg-red-500 rounded-full right-0 top-0 opacity-75"></span>
+          <WhatsappLogo className="text-white" size={32} weight="fill" />
+        </a>
+      </button>
     </div>
   )
 }
