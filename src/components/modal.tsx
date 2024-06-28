@@ -1,4 +1,5 @@
 import { zodResolver } from '@hookform/resolvers/zod'
+import { X } from '@phosphor-icons/react'
 import axios from 'axios'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
@@ -57,25 +58,34 @@ export function ExitPopup({ showPopup, onClose }: ExitPopupProps) {
   if (!showPopup) return null
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-      <div className="bg-white p-6 rounded shadow-lg">
-        <div>
-          <img src={modalImage} alt="" />
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 max-[768px]:hidden">
+      <div className="bg-cor-fundo p-6 rounded-lg shadow-lg grid grid-cols-2 gap-5 max-w-[1180px] items-center relative">
+        <div className="flex flex-col text-corTexto">
+          <img className="w-96 -mt-24" src={modalImage} alt="" />
+          <div className="-mt-5">
+            <h2 className="text-5xl font-bold leading-[3.30rem]">
+              Fale agora com um especialista da Souta Soluções!
+            </h2>
+            <p className="text-xs mt-5">
+              Converse agora com nosso time e tire todas as suas duvidas
+            </p>
+          </div>
         </div>
         <div>
           <form onSubmit={handleSubmit(handleSubmitForm)} className="space-y-4">
             <div>
               <label
-                htmlFor="name"
+                htmlFor="nameModal"
                 className="block text-sm font-medium text-zinc-400"
               >
                 Nome
               </label>
               <input
                 type="text"
-                id="name"
+                id="nameModal"
+                placeholder="Seu nome completo"
                 {...register('name')}
-                className="mt-1 block w-full px-3 py-2 border border-cor-fundo text-zinc-400 rounded-md shadow-sm focus:outline-none focus:ring-corTexto focus:border-corTexto sm:text-sm bg-transparent"
+                className="mt-1 block w-full px-3 py-2 border-2 border-transparent brightness-95 text-zinc-400 rounded-md shadow-sm focus:outline-none focus:ring-corTexto focus:border-corTexto sm:text-sm bg-cor-fundo"
               />
               {formErrors.name && (
                 <p className="mt-1 text-xs text-red-500">
@@ -85,17 +95,17 @@ export function ExitPopup({ showPopup, onClose }: ExitPopupProps) {
             </div>
             <div>
               <label
-                htmlFor="phone"
+                htmlFor="phoneModal"
                 className="block text-sm font-medium text-zinc-400"
               >
                 Telefone
               </label>
               <input
                 type="tel"
-                id="phone"
+                id="phoneModal"
                 placeholder="Ex: 11 99999 9999"
                 {...register('phone')}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 text-zinc-400 rounded-md shadow-sm focus:outline-none focus:ring-corTexto focus:border-corTexto sm:text-sm bg-transparent"
+                className="mt-1 block w-full px-3 py-2 border-2 border-transparent brightness-95 text-zinc-400 rounded-md shadow-sm focus:outline-none focus:ring-corTexto focus:border-corTexto sm:text-sm bg-cor-fundo"
               />
               {formErrors.phone && (
                 <p className="mt-1 text-xs text-red-500">
@@ -105,15 +115,15 @@ export function ExitPopup({ showPopup, onClose }: ExitPopupProps) {
             </div>
             <div>
               <label
-                htmlFor="message"
+                htmlFor="messageModal"
                 className="block text-sm font-medium text-zinc-400"
               >
                 Menssagem
               </label>
               <textarea
-                id="message"
+                id="messageModal"
                 {...register('message')}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 text-zinc-400 rounded-md shadow-sm focus:outline-none focus:ring-corTexto focus:border-corTexto sm:text-sm resize-none bg-transparent"
+                className="mt-1 block w-full px-3 py-2 border-2 border-transparent brightness-95 text-zinc-400 rounded-md shadow-sm focus:outline-none focus:ring-corTexto focus:border-corTexto sm:text-sm resize-none bg-cor-fundo"
               />
               {formErrors.message && (
                 <p className="mt-1 text-xs text-red-500">
@@ -124,14 +134,19 @@ export function ExitPopup({ showPopup, onClose }: ExitPopupProps) {
             <div>
               <button
                 type="submit"
-                className="bg-transparent border-2 border-corTexto w-full text-white hover:bg-cor-fundo hover:border-transparent hover:text-corTexto rounded-md py-3 font-semibold ease-in-out duration-300"
+                className="bg-corTexto border-2 border-corTexto w-full text-white hover:bg-cor-fundo hover:border-corTexto hover:text-corTexto rounded-md py-3 font-semibold ease-in-out duration-300"
               >
                 Enviar
               </button>
-              <button onClick={onClose}>Fechar</button>
             </div>
           </form>
         </div>
+        <button
+          onClick={onClose}
+          className="absolute top-0 right-0 translate-x-[50%] translate-y-[-50%] bg-corTexto text-cor-fundo rounded-full p-1"
+        >
+          <X size={20} />
+        </button>
       </div>
     </div>
   )

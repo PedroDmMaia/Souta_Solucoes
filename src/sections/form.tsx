@@ -67,6 +67,7 @@ export function ContactForm() {
           <input
             type="text"
             id="name"
+            placeholder="Seu nome completo"
             {...register('name')}
             className="mt-1 block w-full px-3 py-2 border border-cor-fundo text-zinc-400 rounded-md shadow-sm focus:outline-none focus:ring-corTexto focus:border-corTexto sm:text-sm bg-transparent"
           />
