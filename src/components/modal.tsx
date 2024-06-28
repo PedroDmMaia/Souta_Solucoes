@@ -37,7 +37,7 @@ export function ExitPopup({ showPopup, onClose }: ExitPopupProps) {
     try {
       const res = await axios.post(
         'https://api.staticforms.xyz/submit',
-        { ...data, accessKey: '8b11e775-a9f3-4ff9-99fd-7b19acf6b837' },
+        { ...data, accessKey: 'ac9bae19-1038-4159-99a1-16c9132c11e0' },
         {
           headers: { 'Content-Type': 'application/json' },
         },
@@ -46,7 +46,7 @@ export function ExitPopup({ showPopup, onClose }: ExitPopupProps) {
       if (res.data.success) {
         toast.success('Email enviado com sucesso')
       } else {
-        toast.error('Falja no envio de email')
+        toast.error('Falha no envio de email')
       }
 
       reset()
