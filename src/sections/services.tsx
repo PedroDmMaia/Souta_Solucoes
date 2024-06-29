@@ -1,4 +1,11 @@
-import { Bank, Car, HouseLine, Money } from '@phosphor-icons/react'
+import {
+  Bank,
+  Car,
+  Desktop,
+  HouseLine,
+  Money,
+  Speedometer,
+} from '@phosphor-icons/react'
 
 export function Services() {
   return (
@@ -32,7 +39,7 @@ export function Services() {
         </div>
 
         <div className="flex flex-col items-center bg-cor-fundo rounded-md text-center p-4 lg:h-48">
-          <Money size={32} />
+          <Car size={32} />
           <span className="font-semibold">Busca e Apreensão de Veículos</span>
           <p className="text-xs">
             Ajudamos a renegociar as parcelas do seu veículo atrasadas, para
@@ -51,7 +58,7 @@ export function Services() {
         </div>
 
         <div className="flex flex-col items-center bg-cor-fundo rounded-md text-center p-4 lg:h-48">
-          <Car size={32} />
+          <Speedometer size={32} />
           <span className="font-semibold">Aumento do Score</span>
           <p className="text-xs">
             Oferecemos estratégias eficazes para aumentar seu score de crédito,
@@ -61,7 +68,7 @@ export function Services() {
         </div>
 
         <div className="flex flex-col items-center bg-cor-fundo rounded-md text-center p-4 lg:h-48">
-          <Car size={32} />
+          <Money size={32} />
           <span className="font-semibold">Cheques Devolvidos</span>
           <p className="text-xs">
             Facilitamos a localização dos cheques perdidos ou extraviados e
@@ -71,7 +78,7 @@ export function Services() {
         </div>
 
         <div className="flex flex-col items-center bg-cor-fundo rounded-md text-center p-4 lg:h-48">
-          <Car size={32} />
+          <Desktop size={32} />
           <span className="font-semibold">Consultoria Financeira</span>
           <p className="text-xs">
             Nosso objetivo é ir além da recuperação de crédito. Oferecemos a
