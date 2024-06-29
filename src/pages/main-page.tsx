@@ -42,7 +42,7 @@ export function MainPage() {
       <main className="bg-slate-700 w-full h-full pt-[4.5rem]">
         <Hero />
         <Services />
-        <Home />
+        <Home link="faq" />
         <Topics />
         <HowWork />
         <Faq />

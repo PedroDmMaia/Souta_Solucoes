@@ -63,7 +63,13 @@ export function Faq() {
                 Faltou alguma informção ?
               </span>
               <button className="bg-transparent border-2 border-corTexto w-64 text-corTexto hover:bg-corTexto hover:border-transparent hover:text-white rounded-md py-3 font-semibold ease-in-out duration-300">
-                <a href="">Tirar uma dúvida</a>
+                <a
+                  href="https://wa.me/5511970696009?text=Ol%C3%A1%2C%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20para%20negociar%20minha%20d%C3%ADvida"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Tirar uma dúvida
+                </a>
               </button>
             </div>
           </div>

@@ -12,7 +12,7 @@ export function Hero() {
 
           <p className="xl:w-[25rem] xl:mb-8 mb-5 text-center xl:text-start text-white">
             Aliamos nossa paixão pela liberdade financeira dos brasileiros com a
-            clareza e a seriedade que um serviço essencial aos sonhos requer.*
+            clareza e a seriedade que um serviço essencial aos sonhos requer.
           </p>
         </div>
         <button className="bg-transparent border-2 border-corTexto w-80 text-white hover:bg-cor-fundo hover:border-transparent hover:text-corTexto rounded-md py-3 font-semibold ease-in-out duration-300">

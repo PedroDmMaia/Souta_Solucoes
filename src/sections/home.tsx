@@ -1,6 +1,18 @@
 import image from '../../public/unnamed.png'
 
-export function Home() {
+interface HomeProps {
+  link: string
+}
+
+export function Home({ link }: HomeProps) {
+  const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault()
+    const section = document.getElementById(link)
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <div
       id="home"
@@ -22,8 +34,13 @@ export function Home() {
             e promissor.
           </p>
         </div>
-        <button className="bg-transparent border-2 border-corTexto w-64 text-white hover:bg-cor-fundo hover:border-transparent hover:text-corTexto rounded-md py-3 font-semibold ease-in-out duration-300">
-          <a href="#">Fale conosco</a>
+        <button
+          type="button"
+          className="bg-transparent border-2 border-corTexto w-64 text-white hover:bg-cor-fundo hover:border-transparent hover:text-corTexto rounded-md py-3 font-semibold ease-in-out duration-300"
+        >
+          <a href={`#${link}`} onClick={handleClick}>
+            Fale conosco
+          </a>
         </button>
       </div>
     </div>
