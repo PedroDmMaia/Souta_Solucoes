@@ -59,7 +59,12 @@ export function ExitPopup({ showPopup, onClose }: ExitPopupProps) {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 max-[768px]:hidden">
-      <div className="bg-cor-fundo p-6 rounded-lg shadow-lg grid grid-cols-2 gap-5 max-w-[1180px] items-center relative">
+      <div
+        className="bg-cor-fundo p-6 rounded-lg shadow-lg grid grid-cols-2 gap-5 max-w-[1180px] items-center relative"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="500"
+      >
         <div className="flex flex-col text-corTexto">
           <img className="w-96 -mt-24" src={modalImage} alt="" />
           <div className="-mt-5">

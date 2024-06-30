@@ -12,6 +12,9 @@ export function Services() {
     <div
       id="services"
       className="grid grid-cols-1 lg:flex flex-col gap-10 justify-between md:px-10 lg:px-0 px-7 pt-24 md:pt-40"
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="700"
     >
       <div className="xl:max-w-[1180px] mx-auto">
         <span className="text-sm uppercase text-zinc-400">Nossos serviços</span>
@@ -26,6 +29,7 @@ export function Services() {
           ajudar:
         </p>
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mx-auto gap-6 max-w-[1180px]">
         <div className="flex flex-col items-center bg-cor-fundo rounded-md text-center p-4 lg:h-48">
           <Bank size={32} />

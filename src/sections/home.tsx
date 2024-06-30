@@ -17,6 +17,9 @@ export function Home({ link }: HomeProps) {
     <div
       id="home"
       className="pt-24 md:pt-40 md:px-10 lg:px-0 px-7 grid lg:grid-cols-2 items-center gap-4 lg:gap-10 xl:max-w-[1180px] mx-auto"
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="700"
     >
       <img className="rounded-md" src={image} alt="" />
       <div className="xl:py-20 flex flex-col gap-5 items-start pt-5 md:pt-0 pr-0 lg:pr-24">

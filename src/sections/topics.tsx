@@ -2,7 +2,12 @@ import { ChartBar, Speedometer, TrendUp } from '@phosphor-icons/react'
 
 export function Topics() {
   return (
-    <div className="bg-cor-fundo shadow-lg shadow-slate-900 xl:pl-8 xl:mb-10 z-20 relative mt-32">
+    <div
+      className="bg-cor-fundo shadow-lg shadow-slate-900 xl:pl-8 xl:mb-10 z-20 relative mt-32"
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+    >
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-20 md:gap-28 py-12 md:py-20 max-w-[1180px] mx-auto">
         <div className="flex flex-col items-center gap-4 text-center">
           <div className="rounded-full bg-corTexto flex items-center justify-center text-white p-2">
