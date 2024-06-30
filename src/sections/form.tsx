@@ -11,6 +11,7 @@ const SendMessage = z.object({
     .min(10, 'Informe um numero de telefone válido')
     .max(15, 'Informe um número de telefone válido'),
   message: z.string().min(1, 'escreva uma mensagem'),
+  email: z.string().email('Informe um email válido'),
 })
 
 type messageInfo = z.infer<typeof SendMessage>
@@ -94,6 +95,26 @@ export function ContactForm() {
           {formErrors.phone && (
             <p className="mt-1 text-xs text-red-500">
               {formErrors.phone.message}
+            </p>
+          )}
+        </div>
+        <div>
+          <label
+            htmlFor="email"
+            className="block text-sm font-medium text-zinc-400"
+          >
+            Email
+          </label>
+          <input
+            type="text"
+            id="email"
+            placeholder="Exemplo@hotmail.com"
+            {...register('email')}
+            className="mt-1 block w-full px-3 py-2 border border-gray-300 text-zinc-400 rounded-md shadow-sm focus:outline-none focus:ring-corTexto focus:border-corTexto sm:text-sm bg-transparent"
+          />
+          {formErrors.phone && (
+            <p className="mt-1 text-xs text-red-500">
+              {formErrors.email?.message}
             </p>
           )}
         </div>
