@@ -8,8 +8,8 @@ export default {
         corTexto: '#1B2A30',
       },
       backgroundImage: {
-        'hero-image': "url('/public/hero.jpg')",
-        paralax: "url('/public/paralax.jpg')",
+        'hero-image': "url('/hero.jpg')",
+        paralax: "url('/paralax.jpg')",
       },
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],

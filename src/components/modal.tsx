@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 import { z } from 'zod'
 
-import modalImage from '../../public/imageModal.png'
+import modalImage from '../../public/Desing para pop-up.png'
 
 interface ExitPopupProps {
   showPopup: boolean

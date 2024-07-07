@@ -1,9 +1,7 @@
-import {
-  Download,
-  FacebookLogo,
-  InstagramLogo,
-  LinkedinLogo,
-} from '@phosphor-icons/react'
+/* eslint-disable import/no-absolute-path */
+import { Download, InstagramLogo } from '@phosphor-icons/react'
+
+import presentation from '/Souta Soluções.pdf'
 
 export function Footer() {
   return (
@@ -25,6 +23,10 @@ export function Footer() {
             </p>
             <p>CEP 03648-080</p>
           </div>
+
+          <p className="text-corTexto">
+            &copy; 2024 Souta Soluções - Todos os direitos reservados.
+          </p>
         </div>
 
         <div className="flex flex-col gap-4">
@@ -38,17 +40,11 @@ export function Footer() {
             >
               <InstagramLogo size={32} />
             </a>
-            <a href="" target="_blank">
-              <FacebookLogo size={32} />
-            </a>
-            <a href="" target="_blank">
-              <LinkedinLogo size={32} />
-            </a>
           </div>
 
           <span className="uppercase font-semibold flex flex-col items-center md:block">
             Apresentação institucional
-            <a href="" target="_blank">
+            <a href={presentation} target="_blank" rel="noreferrer">
               <Download size={32} weight="fill" />
             </a>
           </span>
@@ -57,7 +53,3 @@ export function Footer() {
     </footer>
   )
 }
-
-// <p className="text-corTexto">
-//   &copy; 2024 Souta Soluções - Todos os direitos reservados.
-// </p>

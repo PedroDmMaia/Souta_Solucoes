@@ -1,7 +1,9 @@
+/* eslint-disable import/no-absolute-path */
 import { List, X } from '@phosphor-icons/react'
 import { MouseEvent as ReactMouseEvent, useState } from 'react'
 
-import Logo from '../../public/Logo.png'
+import Logo from '/Logo.png'
+
 import { Button } from './button'
 
 interface Link {

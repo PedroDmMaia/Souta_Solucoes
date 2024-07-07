@@ -1,4 +1,5 @@
-import image from '../../public/unnamed.png'
+/* eslint-disable import/no-absolute-path */
+import image from '/unnamed.png'
 
 interface HomeProps {
   link: string
