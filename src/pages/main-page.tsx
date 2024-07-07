@@ -14,26 +14,26 @@ import { Services } from '@/sections/services'
 import { Topics } from '@/sections/topics'
 
 export function MainPage() {
-  // const [showPopup, setShowPopup] = useState(false)
+  const [showPopup, setShowPopup] = useState(false)
 
-  // useEffect(() => {
-  //   const handleMouseLeave = (event: MouseEvent) => {
-  //     if (
-  //       event.clientY <= 0 ||
-  //       event.clientX <= 0 ||
-  //       event.clientX >= window.innerWidth ||
-  //       event.clientY >= window.innerHeight
-  //     ) {
-  //       setShowPopup(true)
-  //     }
-  //   }
+  useEffect(() => {
+    const handleMouseLeave = (event: MouseEvent) => {
+      if (
+        event.clientY <= 0 ||
+        event.clientX <= 0 ||
+        event.clientX >= window.innerWidth ||
+        event.clientY >= window.innerHeight
+      ) {
+        setShowPopup(true)
+      }
+    }
 
-  //   document.addEventListener('mouseleave', handleMouseLeave)
+    document.addEventListener('mouseleave', handleMouseLeave)
 
-  //   return () => {
-  //     document.removeEventListener('mouseleave', handleMouseLeave)
-  //   }
-  // }, [])
+    return () => {
+      document.removeEventListener('mouseleave', handleMouseLeave)
+    }
+  }, [])
 
   return (
     <div className="font-roboto antialiased">
@@ -49,7 +49,7 @@ export function MainPage() {
         <ContactForm />
         <Footer />
       </main>
-      {/* <ExitPopup showPopup={showPopup} onClose={() => setShowPopup(false)} /> */}
+      <ExitPopup showPopup={showPopup} onClose={() => setShowPopup(false)} />
       <button className="fixed bottom-5 right-5 z-50 p-[0.30rem] rounded-full bg-green-400 flex items-center justify-center">
         <a
           href="https://wa.me/5511970696009?text=Ol%C3%A1%2C%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20para%20negociar%20minha%20d%C3%ADvida"
