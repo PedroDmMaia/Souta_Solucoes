@@ -22,7 +22,7 @@ export function HowWork() {
           <h2 className="text-3xl uppercase">Como Funciona</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4 mt-20">
-            <div className="flex flex-col items-center text-center gap-2 bg-cor-fundo text-corTexto rounded-md p-8 h-80 md:h-auto">
+            <div className="flex flex-col items-center text-center gap-2 bg-cor-fundo text-corTexto rounded-md p-4 h-80 md:h-auto">
               <div>
                 <Handshake size={32} />
               </div>
@@ -36,7 +36,7 @@ export function HowWork() {
               </p>
             </div>
 
-            <div className="flex flex-col items-center text-center  gap-2 bg-cor-fundo text-corTexto rounded-md p-8 h-80 md:h-auto">
+            <div className="flex flex-col items-center text-center  gap-2 bg-cor-fundo text-corTexto rounded-md p-4 h-80 md:h-auto">
               <div>
                 <PhoneOutgoing size={32} />
               </div>
@@ -52,7 +52,7 @@ export function HowWork() {
               </p>
             </div>
 
-            <div className="flex flex-col items-center text-center  gap-2 bg-cor-fundo text-corTexto rounded-md p-8 h-80 md:h-auto">
+            <div className="flex flex-col items-center text-center  gap-2 bg-cor-fundo text-corTexto rounded-md p-4 h-80 md:h-auto">
               <div>
                 <CurrencyDollar size={32} />
               </div>
@@ -67,7 +67,7 @@ export function HowWork() {
               </p>
             </div>
 
-            <div className="flex flex-col items-center text-center gap-2 bg-cor-fundo text-corTexto rounded-md p-8 h-80 md:h-auto">
+            <div className="flex flex-col items-center text-center gap-2 bg-cor-fundo text-corTexto rounded-md p-4 h-80 md:h-auto">
               <div>
                 <Smiley size={32} />
               </div>
@@ -81,7 +81,7 @@ export function HowWork() {
               </p>
             </div>
 
-            <div className="flex flex-col items-center text-center gap-2 bg-cor-fundo text-corTexto rounded-md p-8 h-80 md:h-auto">
+            <div className="flex flex-col items-center text-center gap-2 bg-cor-fundo text-corTexto rounded-md p-4 h-80 md:h-auto">
               <div>
                 <UsersThree size={32} />
               </div>
