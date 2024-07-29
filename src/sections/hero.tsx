@@ -1,3 +1,5 @@
+import { WhatsappLogo } from '@phosphor-icons/react'
+
 export function Hero() {
   return (
     <div className="relative py-32 px-7 bg-hero-image bg-cover">
@@ -15,13 +17,14 @@ export function Hero() {
             clareza e a seriedade que um serviço essencial aos sonhos requer.
           </p>
         </div>
-        <button className="bg-green-600 w-80 text-white hover:bg-green-500 rounded-md py-3 font-semibold ease-in-out duration-300 cursor-pointer">
+        <button className="bg-green-600 w-80 text-white hover:bg-green-500 rounded-md py-3 font-semibold ease-in-out duration-300 cursor-pointer flex items-center justify-center gap-1">
+          <WhatsappLogo size={16} />
           <a
             href="https://wa.me/5511970696009?text=Ol%C3%A1%2C%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20para%20negociar%20minha%20d%C3%ADvida"
             target="_blank"
             rel="noreferrer"
           >
-            Fale com um de nossos atendentes
+            Fale com um especialista agora
           </a>
         </button>
       </div>
