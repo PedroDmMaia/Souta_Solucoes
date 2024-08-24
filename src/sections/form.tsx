@@ -30,7 +30,7 @@ export function ContactForm() {
     try {
       const res = await axios.post(
         'https://api.staticforms.xyz/submit',
-        { ...data, accessKey: 'ac9bae19-1038-4159-99a1-16c9132c11e0' },
+        { ...data, accessKey: '95fcb801-148d-4c8d-9439-fc9618ee060c' },
         {
           headers: { 'Content-Type': 'application/json' },
         },
@@ -39,7 +39,7 @@ export function ContactForm() {
       if (res.data.success) {
         toast.success('Email enviado com sucesso')
       } else {
-        toast.error('Falja no envio de email')
+        toast.error('Falha no envio de email')
       }
 
       reset()
