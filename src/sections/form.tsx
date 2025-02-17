@@ -30,7 +30,7 @@ export function ContactForm() {
     try {
       const res = await axios.post(
         'https://api.staticforms.xyz/submit',
-        { ...data, accessKey: '95fcb801-148d-4c8d-9439-fc9618ee060c' },
+        { ...data, accessKey: '8b11e775-a9f3-4ff9-99fd-7b19acf6b837' },
         {
           headers: { 'Content-Type': 'application/json' },
         },
