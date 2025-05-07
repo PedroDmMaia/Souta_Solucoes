@@ -2,8 +2,6 @@
 import { List, X } from '@phosphor-icons/react'
 import { MouseEvent as ReactMouseEvent, useState } from 'react'
 
-import Logo from '/Logo.png'
-
 import { Button } from './button'
 
 interface Link {
@@ -35,7 +33,7 @@ export function NavBar() {
     <div className="shadow-md w-full fixed top-0 left-0 z-50">
       <div className="bg-cor-fundo py-4 lg:px-0 px-7">
         <div className="lg:flex items-center justify-between bg-cor-fundo lg:max-w-[1180px] mx-auto">
-          <img className="w-40" src={Logo} alt="" />
+          <img className="w-40" src='/Logo.png' alt="" />
           <div
             onClick={() => setIsOpen(!isOpen)}
             className="text-3xl absolute right-8 top-7 cursor-pointer lg:hidden"

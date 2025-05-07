@@ -5,8 +5,6 @@ import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 import { z } from 'zod'
 
-import modalImage from '../../public/Desing para pop-up.png'
-
 interface ExitPopupProps {
   showPopup: boolean
   onClose: () => void
@@ -67,7 +65,7 @@ export function ExitPopup({ showPopup, onClose }: ExitPopupProps) {
         data-aos-duration="500"
       >
         <div className="flex flex-col text-corTexto">
-          <img className="w-96 -mt-24" src={modalImage} alt="" />
+          <img className="w-96 -mt-24" src='Desing-para-pop-up.png' alt="" />
           <div className="-mt-5">
             <h2 className="text-5xl font-bold leading-[3.30rem]">
               Fale agora com um especialista da Souta Soluções!

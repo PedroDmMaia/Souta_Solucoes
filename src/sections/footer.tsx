@@ -1,7 +1,7 @@
 /* eslint-disable import/no-absolute-path */
 import { Download, InstagramLogo } from '@phosphor-icons/react'
 
-import presentation from '/Souta Soluções.pdf'
+import presentation from '../assets/Souta Soluções.pdf'
 
 export function Footer() {
   return (
@@ -13,19 +13,19 @@ export function Footer() {
           </span>
 
           <div className="flex flex-col gap-[0.20rem]">
-            <a>+55 11 2362-6732</a>
+            <a>+55 11 96418-7281</a>
             <p>soutasolucoes@gmail.com</p>
           </div>
 
           <div className="flex flex-col gap-1">
-            <p className="md:w-72">
+            <p className="md:w-72"> 
               R. Dezenove de Maio, 33, Sala Comercial 3. São Paulo - SP.
             </p>
             <p>CEP 03648-080</p>
           </div>
 
           <p className="text-corTexto">
-            &copy; 2024 Souta Soluções - Todos os direitos reservados.
+            &copy; 2025 Souta Soluções - Todos os direitos reservados.
           </p>
         </div>
 

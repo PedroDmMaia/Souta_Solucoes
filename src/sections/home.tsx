@@ -1,6 +1,3 @@
-/* eslint-disable import/no-absolute-path */
-import image from '/unnamed.png'
-
 interface HomeProps {
   link: string
 }
@@ -22,7 +19,7 @@ export function Home({ link }: HomeProps) {
       data-aos-easing="linear"
       data-aos-duration="700"
     >
-      <img className="rounded-md" src={image} alt="" />
+      <img className="rounded-md" src='/unnamed.png' alt="" />
       <div className="xl:py-20 flex flex-col gap-5 items-start pt-5 md:pt-0 pr-0 lg:pr-24">
         <h3 className="text-3xl md:text-4xl font-bold leading-none text-white">
           Elimine suas <span>dívidas</span> agora!
